@@ -1,0 +1,12 @@
+language: node_js
+jobs:
+  include:
+    - os: linux
+      dist: bionic
+      node_js: "12"
+install:
+  - npm install
+script:
+  - npm test
+after_success:
+  - npm run report-coverage
