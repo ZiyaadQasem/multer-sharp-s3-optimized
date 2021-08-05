@@ -25,9 +25,9 @@
   "author": "Abdul Fattah Ikhsan <ikhsannetwork@gmail.com> (http://ikhsannetwork.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ikhsanalatsary/multer-sharp-s3/issues"
+    "url": "https://github.com/ZiyaadQasem/multer-sharp-s3-optimized/issues"
   },
-  "homepage": "https://github.com/ikhsanalatsary/multer-sharp-s3#readme",
+  "homepage": "https://github.com/ZiyaadQasem/multer-sharp-s3-optimized#readme",
   "files": [
     "LICENSE",
     "README.md",
