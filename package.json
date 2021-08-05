@@ -1,5 +1,5 @@
 {
-  "name": "multer-sharp-s3-optimized",
+  "name": "multer-sharp-s3-opt",
   "version": "0.2.1",
   "description": "A plugin multer to transform image and upload to AWS S3",
   "main": "index.js",
@@ -22,7 +22,7 @@
     "type": "git",
     "url": "git+https://github.com/ZiyaadQasem/multer-sharp-s3-optimized.git"
   },
-  "author": "Abdul Fattah Ikhsan <ikhsannetwork@gmail.com> (http://ikhsannetwork.com/)",
+  "author": "ziyaad Qasem <ziyaad.qasem@yahoo.de> (ziyaad.qasem@yahoo.de/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ZiyaadQasem/multer-sharp-s3-optimized/issues"
