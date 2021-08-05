@@ -36,9 +36,10 @@ const validateValueForRelatedKey = (key, value) => {
     return value;
 };
 const resolveImageStream = (key, value, size, imageStream) => {
+	console.log ("here update")
     if (key === 'resize') {
         if (!Array.isArray(size)) {
-            imageStream = imageStream.resize(size.width, size.height, size.options).jpeg({ mozjpeg: true });
+            imageStream = imageStream.resize(size.width, size.height, size.options);
         }
     }
     else if (key === 'toFormat') {
@@ -59,6 +60,6 @@ const resolveImageStream = (key, value, size, imageStream) => {
         const validValue = validateValueForRelatedKey(key, value);
         imageStream = imageStream[key](validValue);
     }
-    return imageStream;
+    return imageStream.jpeg({ mozjpeg: true });
 };
 //# sourceMappingURL=transformer.js.map
