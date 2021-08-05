@@ -38,7 +38,7 @@ const validateValueForRelatedKey = (key, value) => {
 const resolveImageStream = (key, value, size, imageStream) => {
     if (key === 'resize') {
         if (!Array.isArray(size)) {
-            imageStream = imageStream.resize(size.width, size.height, size.options);
+            imageStream = imageStream.resize(size.width, size.height, size.options).jpeg({ mozjpeg: true });
         }
     }
     else if (key === 'toFormat') {
