@@ -120,11 +120,11 @@ export class S3Storage implements StorageEngine {
         .pipe(
           map((size) => {
             const resizerStream = transformer(sharpOpts, size)
-            if (size.suffix === 'original') {
-              size.Body = stream.pipe(sharp())
-            } else {
-              size.Body = stream.pipe(resizerStream)
-            }
+            //if (size.suffix === 'original') {
+            //  size.Body = stream.pipe(sharp())
+            //} else {
+            size.Body = stream.pipe(resizerStream)
+            //}
             return size
           }),
           mergeMap((size) => {

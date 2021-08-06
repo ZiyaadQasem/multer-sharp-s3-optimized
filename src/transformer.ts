@@ -43,7 +43,7 @@ const validateValueForRelatedKey = (key: string, value: any) => {
   return value
 }
 const resolveImageStream = (key: string, value: any, size: ResizeOption, imageStream: sharp.Sharp) => {
-  console.log ("here update")
+ 
   if (key === 'resize') {
     if (!Array.isArray(size)) {
       imageStream = imageStream.resize(size.width, size.height, size.options)

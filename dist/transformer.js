@@ -36,9 +36,10 @@ const validateValueForRelatedKey = (key, value) => {
     return value;
 };
 const resolveImageStream = (key, value, size, imageStream) => {
-	console.log ("here update")
+	
     if (key === 'resize') {
         if (!Array.isArray(size)) {
+			console.log ("here update")
             imageStream = imageStream.resize(size.width, size.height, size.options);
         }
     }
